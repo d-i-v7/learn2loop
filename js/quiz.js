@@ -135,6 +135,7 @@ if (PromptText === "html" || PromptText === "css" || PromptText === "js" || Prom
     // Store the valid choice in localStorage
     localStorage.setItem("eduType", PromptText);
     console.log("Choice saved:", PromptText);
+    window.location.reload();
 } else {
     // Inform the user that the input is invalid
     $.notify( response.message,"Invalid input. Please enter 'html', 'css', 'js', or 'php'.");
